@@ -14,8 +14,8 @@ import NotificationCard from './NotificationCard';
 import NotificationTemplate from './NotificationTemplate';
 import { getNotifications, addNotification, dismissAll, dismissItem, selectNotifications } from './store/dataSlice';
 import reducer from './store';
-import { closeNotificationPanel, toggleNotificationPanel } from './store/stateSlice';
 import { addContact } from 'app/main/apps/contacts/store/contactsSlice';
+import { closeNotificationPanel, toggleNotificationPanel } from './store/stateSlice';
 import NotificationModel from './model/NotificationModel';
 
 const useStyles = makeStyles(theme => ({

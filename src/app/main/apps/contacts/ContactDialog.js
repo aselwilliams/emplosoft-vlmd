@@ -20,6 +20,7 @@ import * as yup from 'yup';
 import { closeDialog, openDialog } from 'app/store/fuse/dialogSlice';
 import { DialogContentText, DialogTitle } from '@material-ui/core';
 import { addNotification } from 'app/fuse-layouts/shared-components/notificationPanel/store/dataSlice';
+import NotificationModel from 'app/fuse-layouts/shared-components/notificationPanel/model/NotificationModel';
 import {
   removeContact,
   updateContact,
@@ -28,7 +29,6 @@ import {
   closeEditContactDialog
 } from './store/contactsSlice';
 import NotificationPanel from 'app/fuse-layouts/shared-components/notificationPanel/NotificationPanel';
-import NotificationModel from 'app/fuse-layouts/shared-components/notificationPanel/model/NotificationModel';
 
 import { addressData } from './VehicleAddress';
 

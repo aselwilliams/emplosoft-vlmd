@@ -126,8 +126,8 @@ export const removeContact = createAsyncThunk(
       return contactId;
     } catch (err) {
       dispatch(addNotification(NotificationModel({ message: 'Vehicle is NOT removed!', options: { variant: 'warning'}})))
+      return contactId;
     }
-    return
   }
 );
 
