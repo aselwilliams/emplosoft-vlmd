@@ -10,6 +10,7 @@ import Button from '@material-ui/core/Button';
 import { motion } from 'framer-motion';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectMainTheme } from 'app/store/fuse/settingsSlice';
+import NotificationPanel from 'app/fuse-layouts/shared-components/notificationPanel/NotificationPanel';
 import {
   setContactsSearchText,
   selectContacts,
@@ -19,7 +20,6 @@ import {
 } from './store/contactsSlice';
 import './autocomplete.css';
 import Asynchronous from './Asynchronous';
-import NotificationPanel from 'app/fuse-layouts/shared-components/notificationPanel/NotificationPanel';
 
 
 function ContactsHeader(props) {

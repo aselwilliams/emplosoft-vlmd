@@ -19,8 +19,7 @@ import _ from '@lodash';
 import * as yup from 'yup';
 import { closeDialog, openDialog } from 'app/store/fuse/dialogSlice';
 import { DialogContentText, DialogTitle } from '@material-ui/core';
-import { addressData } from './VehicleAddress';
-
+import { addNotification } from 'app/fuse-layouts/shared-components/notificationPanel/store/dataSlice';
 import {
   removeContact,
   updateContact,
@@ -30,7 +29,8 @@ import {
 } from './store/contactsSlice';
 import NotificationPanel from 'app/fuse-layouts/shared-components/notificationPanel/NotificationPanel';
 import NotificationModel from 'app/fuse-layouts/shared-components/notificationPanel/model/NotificationModel';
-import { addNotification } from 'app/fuse-layouts/shared-components/notificationPanel/store/dataSlice';
+
+import { addressData } from './VehicleAddress';
 
 const avatars = [
   'https://avatarfiles.alphacoders.com/821/thumb-82113.jpg',
